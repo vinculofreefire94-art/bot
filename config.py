@@ -4,7 +4,7 @@ TOKEN = os.getenv("TOKEN")
 
 GRUPO_ID = -1003796977029
 
-# anti-spam
+# anti-spam (sem mudanças)
 SIMILARIDADE_LIMITE = 0.85
 TEMPO_LIMITE = 120
 MAX_HISTORICO = 200

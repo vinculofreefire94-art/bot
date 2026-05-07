@@ -86,23 +86,8 @@ def handle(message):
 
                     warns = add_warning(message.from_user.id)
 
-                    bot.send_message(
-                        message.chat.id,
-                        f"""
-━━━━━━━━━━━━━━
-⚠️ SISTEMA DE CONTROLO
-━━━━━━━━━━━━━━
-
-👤 @{message.from_user.username or "user"}
-
-📉 Violação detectada: mensagem repetida
-
-⚖️ Warning: {warns}/{MAX_WARNINGS}
-
-🧠 Regra: qualidade acima de repetição
-━━━━━━━━━━━━━━
-"""
-                    )
+                    # ❌ REMOVIDO: Mensagem de aviso não será mais enviada
+                    # O bot apenas deleta a mensagem silenciosamente
 
                     # 🔥 BAN AUTOMÁTICO
                     if warns >= MAX_WARNINGS:
